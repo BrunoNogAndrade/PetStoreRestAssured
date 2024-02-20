@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.equalTo;
 
-public class ExerciciosTreinamento1 extends org.example.Relatorio{
+public class TestesCadastroPet extends org.example.Relatorio{
 
     // Exercicio 1
     @Test

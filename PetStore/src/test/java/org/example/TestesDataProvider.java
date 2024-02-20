@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
-public class ExerciciosTreinamento2 extends org.example.Relatorio{
+public class TestesDataProvider extends org.example.Relatorio{
 
     @DataProvider(name = "dataUsertObjectProvider")
     public Object[] dataUsuarioProvider() {
