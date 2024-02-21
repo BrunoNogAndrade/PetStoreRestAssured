@@ -1,9 +1,7 @@
 package bases;
 
 import Utils.GlobalParameters;
-import steps.AutenticacaoSteps;
 import Utils.ExtentReportsUtils;
-import org.codehaus.groovy.transform.tailrec.GotoRecurHereException;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -13,6 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import java.lang.reflect.Method;
 
 public abstract class TestBase {
+
     @BeforeSuite
     public void beforSuite(){
         new GlobalParameters();

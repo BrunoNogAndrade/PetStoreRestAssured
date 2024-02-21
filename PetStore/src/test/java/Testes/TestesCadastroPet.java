@@ -1,22 +1,18 @@
 package Testes;
 
-import Relatorio.Relatorio;
+import bases.TestBase;
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.enableLoggingOfRequestAndResponseIfValidationFails;
-
+import static Utils.Constants.UrlBase;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.equalTo;
+public class TestesCadastroPet extends TestBase {
 
-public class TestesCadastroPet extends Relatorio {
-
-    // Exercicio 1
     @Test
     public void adicionaNovoPet() {
-
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/store/order")
                 .header("content-type", "application/json")
                 .body("{\n" +
@@ -39,11 +35,10 @@ public class TestesCadastroPet extends Relatorio {
         "complete", equalTo( true));
     }
 
-    // Exercicio 2
     @Test
     public void pesquisaPetInexistente() {
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet/999")
                 .header("accept", "application/json")
                 .when()
@@ -55,11 +50,10 @@ public class TestesCadastroPet extends Relatorio {
                 "message", equalTo("Pet not found"));
     }
 
-    // Exercicio 3
     @Test
     public void atualizaPetExistente() {
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet")
                 .header("content-type", "application/json")
                 .body("{\n" +
@@ -94,11 +88,10 @@ public class TestesCadastroPet extends Relatorio {
                         "status", equalTo( "pending"));
     }
 
-    // Exercicio 4
     @Test
     public void atualizaPetIdInexistente() {
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet")
                 .header("content-type", "application/json")
                 .body("{\n" +
@@ -125,11 +118,10 @@ public class TestesCadastroPet extends Relatorio {
                 .statusCode(400);
     }
 
-    // Exercicio 5
     @Test
     public void pesquisaPestFindByStatus() {
         given().param("status","pending")
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet/findByStatus")
                 .header("accept", "application/json")
                 .when()
@@ -139,11 +131,10 @@ public class TestesCadastroPet extends Relatorio {
         .body("status", hasItem("pending"));
     }
 
-    // Exercicio 6
     @Test
     public void metodoInvalido() {
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet")
                 .header("accept", "application/json")
                 .when()

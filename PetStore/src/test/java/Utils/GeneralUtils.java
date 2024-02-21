@@ -12,7 +12,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class GeneralUtils {
-    public static String readFileToAString(String path){
+    public static String readFileToAString(String path) {
         byte[] encoded = new byte[0];
         try {
             encoded = Files.readAllBytes(Paths.get(path));
@@ -22,29 +22,29 @@ public class GeneralUtils {
         return new String(encoded, StandardCharsets.ISO_8859_1);
     }
 
-    public static String getNowDate(String mask){
+    public static String getNowDate(String mask) {
         DateFormat dateFormat = new SimpleDateFormat(mask);
         Date date = new Date();
         return dateFormat.format(date);
     }
 
-    public static String getMethodNameByLevel(int level){
+    public static String getMethodNameByLevel(int level) {
         StackTraceElement[] stackTrace = new Throwable().getStackTrace();
 
         return stackTrace[level].getMethodName();
     }
 
-    public static String getAllStackTrace(ITestResult result){
+    public static String getAllStackTrace(ITestResult result) {
         String allStackTrace = "";
 
-        for(StackTraceElement stackTrace : result.getThrowable().getStackTrace()){
+        for (StackTraceElement stackTrace : result.getThrowable().getStackTrace()) {
             allStackTrace = allStackTrace + "<br>" + stackTrace.toString();
         }
 
         return allStackTrace;
     }
 
-    public static String convertObjectToJsonString(Object object){
+    public static String convertObjectToJsonString(Object object) {
         ObjectMapper mapper = new ObjectMapper();
         String json = null;
         try {
@@ -99,3 +99,4 @@ public class GeneralUtils {
 
         return ret;
     }
+}
