@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="11" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteTestes" duration-ms="13887" started-at="2020-07-03T14:58:28 BRT" finished-at="2020-07-03T14:58:42 BRT">
+    <groups>
+    </groups>
+    <test name="TreinamentoRestAssuredTests" duration-ms="13887" started-at="2020-07-03T14:58:28 BRT" finished-at="2020-07-03T14:58:42 BRT">
+      <class name="org.example.ExerciciosTreinamento2">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:40 BRT" finished-at="2020-07-03T14:58:40 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento2.cadastroUsuariosDataDriving(org.example.Usuario)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="cadastroUsuariosDataDriving(org.example.Usuario)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="cadastroUsuariosDataDriving" duration-ms="527" started-at="2020-07-03T14:58:40 BRT" data-provider="dataUsertObjectProvider" finished-at="2020-07-03T14:58:41 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.example.Usuario@749ab7b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroUsuariosDataDriving -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-07-03T14:58:41 BRT" finished-at="2020-07-03T14:58:41 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cadastroUsuariosDataDriving status=SUCCESS method=ExerciciosTreinamento2.cadastroUsuariosDataDriving(org.example.Usuario)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T14:58:41 BRT" finished-at="2020-07-03T14:58:41 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento2.cadastroUsuariosDataDriving(org.example.Usuario)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="cadastroUsuariosDataDriving(org.example.Usuario)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="cadastroUsuariosDataDriving" duration-ms="331" started-at="2020-07-03T14:58:41 BRT" data-provider="dataUsertObjectProvider" finished-at="2020-07-03T14:58:41 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.example.Usuario@127f9161]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroUsuariosDataDriving -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:41 BRT" finished-at="2020-07-03T14:58:41 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cadastroUsuariosDataDriving status=SUCCESS method=ExerciciosTreinamento2.cadastroUsuariosDataDriving(org.example.Usuario)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="cadastroUsuariosDataDriving(org.example.Usuario)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="cadastroUsuariosDataDriving" duration-ms="324" started-at="2020-07-03T14:58:41 BRT" data-provider="dataUsertObjectProvider" finished-at="2020-07-03T14:58:42 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.example.Usuario@2bf94401]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroUsuariosDataDriving -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T14:58:41 BRT" finished-at="2020-07-03T14:58:41 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento2.cadastroUsuariosDataDriving(org.example.Usuario)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:42 BRT" finished-at="2020-07-03T14:58:42 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cadastroUsuariosDataDriving status=SUCCESS method=ExerciciosTreinamento2.cadastroUsuariosDataDriving(org.example.Usuario)[pri:0, instance:org.example.ExerciciosTreinamento2@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- org.example.ExerciciosTreinamento2 -->
+      <class name="org.example.ExerciciosTreinamento1">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="beforSuite" is-config="true" duration-ms="560" started-at="2020-07-03T14:58:27 BRT" finished-at="2020-07-03T14:58:28 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2020-07-03T14:58:28 BRT" finished-at="2020-07-03T14:58:28 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento1.adicionaNovoPet()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="adicionaNovoPet()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="adicionaNovoPet" duration-ms="9539" started-at="2020-07-03T14:58:28 BRT" finished-at="2020-07-03T14:58:37 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adicionaNovoPet -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="afterTest" is-config="true" duration-ms="17" started-at="2020-07-03T14:58:37 BRT" finished-at="2020-07-03T14:58:37 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adicionaNovoPet status=SUCCESS method=ExerciciosTreinamento1.adicionaNovoPet()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:37 BRT" finished-at="2020-07-03T14:58:37 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento1.atualizaPetExistente()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="atualizaPetExistente()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="atualizaPetExistente" duration-ms="779" started-at="2020-07-03T14:58:37 BRT" finished-at="2020-07-03T14:58:38 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atualizaPetExistente -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:38 BRT" finished-at="2020-07-03T14:58:38 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=atualizaPetExistente status=SUCCESS method=ExerciciosTreinamento1.atualizaPetExistente()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="FAIL" signature="atualizaPetIdInexistente()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="atualizaPetIdInexistente" duration-ms="441" started-at="2020-07-03T14:58:38 BRT" finished-at="2020-07-03T14:58:39 BRT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+at org.example.ExerciciosTreinamento1.atualizaPetIdInexistente(ExerciciosTreinamento1.java:127)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atualizaPetIdInexistente -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T14:58:38 BRT" finished-at="2020-07-03T14:58:38 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento1.atualizaPetIdInexistente()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:39 BRT" finished-at="2020-07-03T14:58:39 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=atualizaPetIdInexistente status=FAILURE method=ExerciciosTreinamento1.atualizaPetIdInexistente()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:39 BRT" finished-at="2020-07-03T14:58:39 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento1.metodoInvalido()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="metodoInvalido()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="metodoInvalido" duration-ms="428" started-at="2020-07-03T14:58:39 BRT" finished-at="2020-07-03T14:58:39 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- metodoInvalido -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="afterTest" is-config="true" duration-ms="3" started-at="2020-07-03T14:58:39 BRT" finished-at="2020-07-03T14:58:39 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=metodoInvalido status=SUCCESS method=ExerciciosTreinamento1.metodoInvalido()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2020-07-03T14:58:39 BRT" finished-at="2020-07-03T14:58:39 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento1.pesquisaPestFindByStatus()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="pesquisaPestFindByStatus()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="pesquisaPestFindByStatus" duration-ms="878" started-at="2020-07-03T14:58:39 BRT" finished-at="2020-07-03T14:58:40 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pesquisaPestFindByStatus -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:40 BRT" finished-at="2020-07-03T14:58:40 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=pesquisaPestFindByStatus status=SUCCESS method=ExerciciosTreinamento1.pesquisaPestFindByStatus()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:40 BRT" finished-at="2020-07-03T14:58:40 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.example.ExerciciosTreinamento1.pesquisaPetInexistente()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="pesquisaPetInexistente()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="pesquisaPetInexistente" duration-ms="435" started-at="2020-07-03T14:58:40 BRT" finished-at="2020-07-03T14:58:40 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pesquisaPetInexistente -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-07-03T14:58:40 BRT" finished-at="2020-07-03T14:58:40 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=pesquisaPetInexistente status=SUCCESS method=ExerciciosTreinamento1.pesquisaPetInexistente()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.example.ExerciciosTreinamento1@754ba872]" name="afterSuite" is-config="true" duration-ms="1391" started-at="2020-07-03T14:58:42 BRT" finished-at="2020-07-03T14:58:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- org.example.ExerciciosTreinamento1 -->
+    </test> <!-- TreinamentoRestAssuredTests -->
+  </suite> <!-- SuiteTestes -->
+</testng-results>

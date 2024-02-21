@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PetStoreRestAssured.iml" filepath="$PROJECT_DIR$/.idea/PetStoreRestAssured.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PetStore/PetStoreRestAssured.iml" filepath="$PROJECT_DIR$/PetStore/PetStoreRestAssured.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PetStoreRestAssured/javarestassuredtestngtemplate.iml" filepath="$PROJECT_DIR$/PetStoreRestAssured/javarestassuredtestngtemplate.iml" />
     </modules>
   </component>
 </project>

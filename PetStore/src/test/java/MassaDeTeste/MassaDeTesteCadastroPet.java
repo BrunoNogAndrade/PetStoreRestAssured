@@ -6,7 +6,7 @@ import org.json.simple.JSONObject;
 public class MassaDeTesteCadastroPet {
     JSONObject JsonPet = new JSONObject();
 
-    public MassaDeTesteExercicios1 insereNovoPet() {
+    public MassaDeTesteCadastroPet insereNovoPet() {
         JsonPet.put("id", 666);
         JsonPet.put("petId", 6661);
         JsonPet.put("quantity", 5);

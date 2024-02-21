@@ -2,29 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89cba049-4e59-4a06-83af-ba2d8bfd8dc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_4_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_osgi_2_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_json_path_4_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_4_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_common_4_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_xml_path_4_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sling_org_apache_sling_javax_activation_0_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PetStore/PetStoreRestAssured.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/GeneralUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/GlobalParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PetStore/src/test/java/enums/AuthenticationType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PetStoreRestAssured.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PetStoreRestAssured.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__com_aventstack_extentreports_4_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__com_sun_xml_bind_jaxb_osgi_2_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__io_rest_assured_json_path_4_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__io_rest_assured_rest_assured_4_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__io_rest_assured_rest_assured_common_4_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__io_rest_assured_xml_path_4_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_apache_sling_org_apache_sling_javax_activation_0_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_codehaus_groovy_groovy_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_mongodb_bson_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_testng_testng_7_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/libraries/Maven__org_yaml_snakeyaml_1_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PetStore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/DataDriven.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/DataDriven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/MassaDeTesteCadastroPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/MassaDeTeste/MassaDeTesteCadastroPet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PetStoreRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PetStoreRestAssured.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PraticaGabarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PraticaGabarito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Relatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Relatorio/Relatorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCadastroPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCadastroPet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCompletos.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCompletos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/petDataCSV.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/MassaDeTeste/petDataCSV.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/suiteTestes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/suiteTestes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/MassaDeTeste/MassaDeTesteCadastroPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/MassaDeTeste/MassaDeTesteCadastroPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Relatorio/Relatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Relatorio/Relatorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/JsonObjects/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/JsonObjects/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/JsonObjects/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/JsonObjects/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/JsonObjects/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/DataDriven.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/DataDriven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PetStoreRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/PetStoreRestAssured.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PraticaGabarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesGabarito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCadastroPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesCadastroPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCompletos.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesCompletos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesDataProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,89 +126,43 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="createModuleGroups" value="true" />
-        <option name="dedicatedModuleDir" value="C:\Program Files\Java\jdk1.8.0_201\jre" />
-        <option name="downloadAnnotationsAutomatically" value="true" />
-        <option name="downloadDocsAutomatically" value="true" />
-        <option name="downloadSourcesAutomatically" value="true" />
-        <option name="jdkForImporter" value="1.8" />
+        <option name="jdkForImporter" value="15" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="1.8 (2)" />
+  <component name="ProjectId" id="2cgISq7pc4jf5OIbty15ef106Z2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectId" id="1lHeSEPlXiXdnjj3mWOof3EB64r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/javarestassuredtemplate-master" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.26436782" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Bruno Andrade\Documents\GitHub\PetStoreRestAssured\PetStore\src\test\java\MassaDeTeste" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration name="PetStoreRestAssured.serializacaoAtravesDeString" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PetStoreRestAssured.pesquisaPet" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PetStoreRestAssured" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.*" />
+          <option name="PATTERN" value="Testes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_201\jre" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PetStoreRestAssured" />
-      <option name="METHOD_NAME" value="serializacaoAtravesDeString" />
-      <option name="GROUP_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Testes" />
+      <option name="MAIN_CLASS_NAME" value="Testes.PetStoreRestAssured" />
+      <option name="METHOD_NAME" value="pesquisaPet" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <useClassPathOnly />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_201\jre" />
-      <option name="SUITE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -135,7 +171,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PetStoreRestAssured.serializacaoAtravesDeString" />
+        <item itemvalue="TestNG.PetStoreRestAssured.pesquisaPet" />
       </list>
     </recent_temporary>
   </component>
@@ -145,49 +181,48 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="89cba049-4e59-4a06-83af-ba2d8bfd8dc6" name="Default Changelist" comment="" />
-      <created>1607256702674</created>
+      <created>1708526797034</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607256702674</updated>
+      <updated>1708526797034</updated>
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="163" y="0" key="#Project_Structure" timestamp="1708519244777">
+    <state x="484" y="85" key="FileChooserDialogImpl" timestamp="1708533694082">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="163" y="0" key="#Project_Structure/0.0.1366.687@0.0.1366.687" timestamp="1708519244777" />
-    <state x="413" y="98" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1708518707909">
+    <state x="484" y="85" key="FileChooserDialogImpl/0.0.1366.687@0.0.1366.687" timestamp="1708533694082" />
+    <state width="1323" height="165" key="GridCell.Tab.0.bottom" timestamp="1708535112988">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="413" y="98" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.687@0.0.1366.687" timestamp="1708518707909" />
-    <state x="171" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1708517315454">
+    <state width="1323" height="165" key="GridCell.Tab.0.bottom/0.0.1366.687@0.0.1366.687" timestamp="1708535112988" />
+    <state width="1323" height="165" key="GridCell.Tab.0.center" timestamp="1708535112987">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="171" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.687@0.0.1366.687" timestamp="1708517315454" />
-    <state x="450" y="145" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1708517372996">
+    <state width="1323" height="165" key="GridCell.Tab.0.center/0.0.1366.687@0.0.1366.687" timestamp="1708535112987" />
+    <state width="1323" height="165" key="GridCell.Tab.0.left" timestamp="1708535112987">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="450" y="145" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.687@0.0.1366.687" timestamp="1708517372996" />
-    <state x="412" y="133" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1708460549047">
+    <state width="1323" height="165" key="GridCell.Tab.0.left/0.0.1366.687@0.0.1366.687" timestamp="1708535112987" />
+    <state width="1323" height="165" key="GridCell.Tab.0.right" timestamp="1708535112988">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="412" y="133" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.687@0.0.1366.687" timestamp="1708460549047" />
-    <state x="463" y="98" key="FileChooserDialogImpl" timestamp="1708519716992">
+    <state width="1323" height="165" key="GridCell.Tab.0.right/0.0.1366.687@0.0.1366.687" timestamp="1708535112988" />
+    <state x="213" y="0" key="Maven.ArtifactSearchDialog" timestamp="1708531944976">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="463" y="98" key="FileChooserDialogImpl/0.0.1366.687@0.0.1366.687" timestamp="1708519716992" />
-    <state x="281" y="0" key="SettingsEditor" timestamp="1708522154778">
+    <state x="213" y="0" key="Maven.ArtifactSearchDialog/0.0.1366.687@0.0.1366.687" timestamp="1708531944976" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1708531048387">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="281" y="0" key="SettingsEditor/0.0.1366.687@0.0.1366.687" timestamp="1708522154778" />
-    <state x="387" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1708518226915">
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.687@0.0.1366.687" timestamp="1708531048387" />
+    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup" timestamp="1708533857970">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="387" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.687@0.0.1366.687" timestamp="1708518226915" />
-    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup" timestamp="1708519664950">
-      <screen x="0" y="0" width="1366" height="687" />
-    </state>
-    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup/0.0.1366.687@0.0.1366.687" timestamp="1708519664950" />
+    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup/0.0.1366.687@0.0.1366.687" timestamp="1708533857970" />
   </component>
 </project>
