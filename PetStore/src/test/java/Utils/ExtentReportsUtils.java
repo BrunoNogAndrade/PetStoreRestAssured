@@ -1,19 +1,19 @@
-package Relatorio;
+package Utils;
 
-import Utils.GlobalParameters;
-import Utils.GeneralUtils;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import Utils.GlobalParameters;
 import enums.AuthenticationType;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
-//import org.codehaus.groovy.ast.tools.GeneralUtils;
 import org.testng.ITestResult;
+import enums.AuthenticationType;
 import java.util.Map;
 
-public class Relatorio {
+public class ExtentReportsUtils {
 
     public static ExtentReports EXTENT_REPORT = null;
     public static ExtentTest TEST;
@@ -160,3 +160,4 @@ public class Relatorio {
         EXTENT_REPORT.flush();
     }
 }
+

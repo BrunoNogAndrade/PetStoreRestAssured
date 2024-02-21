@@ -1,6 +1,5 @@
 package Utils;
 
-
 import org.testng.ITestResult;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
