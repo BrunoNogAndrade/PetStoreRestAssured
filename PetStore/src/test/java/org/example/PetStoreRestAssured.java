@@ -1,26 +1,37 @@
 package org.example;
 
-import io.restassured.http.Header;
-import io.restassured.http.Headers;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import io.restassured.response.Response;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
 
+
+
+import Utils.Category;
+import Utils.Pet;
+import Utils.Tag;
+import com.sun.xml.internal.messaging.saaj.packaging.mime.Header;
+import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Headers;
+import org.testng.annotations.Test;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import static Utils.Constants.UrlBase;
 
-import static io.restassured.RestAssured.*;
-import static io.restassured.RestAssured.baseURI;
 
-public class TreinamentoRestAssured {
+import io.restassured.RestAssured.*;
+import io.restassured.matcher.RestAssuredMatchers.*;
+import org.hamcrest.Matchers.*;
 
-    //@Test
+public class PetStoreRestAssured {
+
+    @Test
     public void helloWorld() {
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet/{petId}")
                 .pathParam("petId", 99998)
         .when()
@@ -29,7 +40,7 @@ public class TreinamentoRestAssured {
                 .statusCode(200);
     }
 
-    //@Test
+    @Test
     public void testeComHeaders() {
         //forma simples
         given().header("content-type", "application/json")
@@ -39,7 +50,6 @@ public class TreinamentoRestAssured {
         Map<String, Object> headersMap = new HashMap<String, Object>();
         headersMap.put("content-type", "application/json");
         headersMap.put("Authorization", "bearer ey541564...");
-
         given().headers(headersMap);
 
         //forma com objetos Header e Heders do RESTASSURED
@@ -57,25 +67,25 @@ public class TreinamentoRestAssured {
         given().headers(headers);
     }
 
-    //@Test
+    @Test
     public void testeComCookie(){
         given().cookie("isso é um cookie")
                 .cookie("isso é outro cookie");
     }
 
-   // @Test
+   @Test
     public void testeComAutenticacao(){
         given().auth().basic("usuario", "senha");
         given().auth().oauth2("token oauth2");
         given().auth().form("usuario", "senha");
     }
 
-    //@Test
+    @Test
     public void testeComPathParameter(){
         given().pathParam("petId", 999998);
     }
 
-    //@Test
+    @Test
     public void testeComQueryParameter(){
         given().queryParam("status", "available"); //somente um valor para status
         given().queryParam("status", "available", "sold", "pending"); //mais de um valor para status
@@ -88,7 +98,7 @@ public class TreinamentoRestAssured {
         given().queryParams(queryParmsMap);
     }
 
-    //@Test
+    @Test
     public void testeComFormParameter(){
         given().header("content-type", "multpart/formdata")
                 .formParam("chave", "valor");
@@ -100,7 +110,7 @@ public class TreinamentoRestAssured {
                 .multiPart("arquivo", new File("src/test/java/org/example/AppTest.java"));//upload de arquivo
     }
 
-    //@Test
+    @Test
     public void testeComBodyParameterEmObjetoJava(){
         Pet pet = new Pet();
         pet.setId(99998);
@@ -131,7 +141,7 @@ public class TreinamentoRestAssured {
         given().body(pet);
     }
 
-    //@Test
+    @Test
     public void serialziacaoComObjetoJsonSimple(){
         JSONObject pet = new JSONObject();
         JSONObject category = new JSONObject();
@@ -165,7 +175,7 @@ public class TreinamentoRestAssured {
         given().body(pet);
     }
 
-    //@Test
+    @Test
     public void serializacaoAtravesDeString(){
        String jsonBody = "{\n" +
                "  \"id\": 99998,\n" +

@@ -1,9 +1,9 @@
-package org.example;
+package MassaDeTeste;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-public class MassaDeTesteExercicios1 {
+public class MassaDeTesteCadastroPet {
     JSONObject JsonPet = new JSONObject();
 
     public MassaDeTesteExercicios1 insereNovoPet() {

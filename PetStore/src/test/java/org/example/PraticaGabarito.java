@@ -1,24 +1,24 @@
 package org.example;
 
+import Relatorio.Relatorio;
+import Utils.Utils;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.testng.ITestResult;
 import org.testng.annotations.*;
 
-import java.lang.reflect.Method;
-
+import static Utils.Constants.UrlBase;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class PraticaGabarito extends Relatorio{
+public class PraticaGabarito extends Relatorio {
 
     public PraticaGabarito(){
         enableLoggingOfRequestAndResponseIfValidationFails();
-        baseURI = "http://petstore.swagger.io/v2";
+        baseURI = UrlBase;
     }
 
     @Test

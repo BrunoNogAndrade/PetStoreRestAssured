@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="SuiteTestes" parallel="false">
-    <test name="TreinamentoRestAssuredTests">
+    <test name="TestesPetStore">
         <classes>
             <class name="org.example.ExerciciosTreinamento1"/>
             <class name="org.example.ExerciciosTreinamento2"/>

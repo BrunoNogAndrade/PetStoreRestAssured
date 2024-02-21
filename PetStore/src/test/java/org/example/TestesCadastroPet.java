@@ -1,5 +1,6 @@
 package org.example;
 
+import Relatorio.Relatorio;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.equalTo;
 
-public class TestesCadastroPet extends org.example.Relatorio{
+public class TestesCadastroPet extends Relatorio {
 
     // Exercicio 1
     @Test

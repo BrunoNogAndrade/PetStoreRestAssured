@@ -1,10 +1,13 @@
 package org.example;
 
+import Relatorio.Relatorio;
+import Utils.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.Iterator;
 
+import static Utils.Constants.UrlBase;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -47,7 +50,7 @@ public class DataDriven extends Relatorio {
     @Test(dataProvider = "dataPetObjectPrvider")
     public void cadastrarPetComSucesso1(Pet petData) {
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet")
                 .header("content-type", "application/json")
                 .body(petData)
@@ -75,7 +78,7 @@ public class DataDriven extends Relatorio {
                 petData[7]);
 
         given()
-                .baseUri("http://petstore.swagger.io/v2")
+                .baseUri(UrlBase)
                 .basePath("/pet")
                 .header("content-type", "application/json")
                 .body(pet)

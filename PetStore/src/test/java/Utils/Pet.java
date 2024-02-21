@@ -1,4 +1,4 @@
-package org.example;
+package Utils;
 
 public class Pet {
     public int id;
@@ -7,9 +7,7 @@ public class Pet {
     public String[] photoUrls;
     public Tag[] tags;
     public String status;
-
     public Pet(){
-
     }
 
     public Pet(int id, Category category, String name, String[] photoUrls, Tag[] tags, String status){

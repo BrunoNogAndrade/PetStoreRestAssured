@@ -1,5 +1,6 @@
 package org.example;
 
+import Relatorio.Relatorio;
 import io.restassured.config.RestAssuredConfig;
 import org.testng.annotations.Test;
 import org.json.simple.JSONArray;
@@ -9,7 +10,7 @@ import static io.restassured.config.JsonConfig.jsonConfig;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.path.json.config.JsonPathConfig.NumberReturnType.BIG_DECIMAL;
 
-public class TestesCompletos extends Relatorio{
+public class TestesCompletos extends Relatorio {
     JSONObject pet = new JSONObject();
     JSONObject category = new JSONObject();
     JSONObject tag1 = new JSONObject();

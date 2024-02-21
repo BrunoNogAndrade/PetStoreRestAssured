@@ -1,4 +1,4 @@
-package org.example;
+package Utils;
 
 public class Category {
     public int id;

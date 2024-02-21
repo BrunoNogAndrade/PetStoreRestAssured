@@ -2,18 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89cba049-4e59-4a06-83af-ba2d8bfd8dc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PetStoreRestAssured.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PetStoreRestAssured.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/ExerciciosTreinamento1.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCadastroPet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/ExerciciosTreinamento2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/MassaDeTesteExercicios1.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/MassaDeTesteCadastroPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/DataDriven.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/DataDriven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/MassaDeTesteCadastroPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/MassaDeTeste/MassaDeTesteCadastroPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PetStoreRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PetStoreRestAssured.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PraticaGabarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/PraticaGabarito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Relatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Relatorio/Relatorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCadastroPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCadastroPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCompletos.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesCompletos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/org/example/TestesDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/org/example/petDataCSV.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/MassaDeTeste/petDataCSV.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/suiteTestes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/suiteTestes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="dedicatedModuleDir" value="C:\Program Files\Java\jdk1.8.0_201\jre" />
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8 (2)" />
   </component>
   <component name="ProjectId" id="1lHeSEPlXiXdnjj3mWOof3EB64r" />
   <component name="ProjectViewState">
@@ -22,15 +64,55 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TreinamentoRestAssured" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruno Andrade\Documents\GitHub\PetStoreRestAssured\PetStore\src\test\java\MassaDeTeste" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration name="PetStoreRestAssured.serializacaoAtravesDeString" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreRestAssured" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_201\jre" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PetStoreRestAssured" />
+      <option name="METHOD_NAME" value="serializacaoAtravesDeString" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <useClassPathOnly />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -51,6 +133,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.PetStoreRestAssured.serializacaoAtravesDeString" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,13 +153,41 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="98" key="FileChooserDialogImpl" timestamp="1696946466240">
+    <state x="163" y="0" key="#Project_Structure" timestamp="1708519244777">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="463" y="98" key="FileChooserDialogImpl/0.0.1366.687@0.0.1366.687" timestamp="1696946466240" />
-    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup" timestamp="1696946270925">
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.687@0.0.1366.687" timestamp="1708519244777" />
+    <state x="413" y="98" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1708518707909">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup/0.0.1366.687@0.0.1366.687" timestamp="1696946270925" />
+    <state x="413" y="98" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.687@0.0.1366.687" timestamp="1708518707909" />
+    <state x="171" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1708517315454">
+      <screen x="0" y="0" width="1366" height="687" />
+    </state>
+    <state x="171" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.687@0.0.1366.687" timestamp="1708517315454" />
+    <state x="450" y="145" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1708517372996">
+      <screen x="0" y="0" width="1366" height="687" />
+    </state>
+    <state x="450" y="145" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.687@0.0.1366.687" timestamp="1708517372996" />
+    <state x="412" y="133" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1708460549047">
+      <screen x="0" y="0" width="1366" height="687" />
+    </state>
+    <state x="412" y="133" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.687@0.0.1366.687" timestamp="1708460549047" />
+    <state x="463" y="98" key="FileChooserDialogImpl" timestamp="1708519716992">
+      <screen x="0" y="0" width="1366" height="687" />
+    </state>
+    <state x="463" y="98" key="FileChooserDialogImpl/0.0.1366.687@0.0.1366.687" timestamp="1708519716992" />
+    <state x="281" y="0" key="SettingsEditor" timestamp="1708522154778">
+      <screen x="0" y="0" width="1366" height="687" />
+    </state>
+    <state x="281" y="0" key="SettingsEditor/0.0.1366.687@0.0.1366.687" timestamp="1708522154778" />
+    <state x="387" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1708518226915">
+      <screen x="0" y="0" width="1366" height="687" />
+    </state>
+    <state x="387" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.687@0.0.1366.687" timestamp="1708518226915" />
+    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup" timestamp="1708519664950">
+      <screen x="0" y="0" width="1366" height="687" />
+    </state>
+    <state x="346" y="8" width="672" height="678" key="search.everywhere.popup/0.0.1366.687@0.0.1366.687" timestamp="1708519664950" />
   </component>
 </project>
