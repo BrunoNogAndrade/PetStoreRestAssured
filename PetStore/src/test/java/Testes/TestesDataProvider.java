@@ -2,11 +2,12 @@ package Testes;
 
 import Relatorio.Relatorio;
 import JsonObjects.Usuario;
+import bases.TestBase;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
-public class TestesDataProvider extends Relatorio {
+public class TestesDataProvider extends TestBase {
 
     @DataProvider(name = "dataUsertObjectProvider")
     public Object[] dataUsuarioProvider() {

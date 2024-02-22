@@ -1,0 +1,2161 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>fev. 21, 2024 10:09:00 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>DataDriven</a></li>
+					<li><a href='#'>PetStoreRestAssured</a></li>
+					<li><a href='#'>TestesCadastroPet</a></li>
+					<li><a href='#'>TestesCompletos</a></li>
+					<li><a href='#'>TestesDataProvider</a></li>
+					<li><a href='#'>TestesGabarito</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='83,333%'><span class='strong'>30</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='16,667%'>6</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>cadastrarPetComSucesso1</span>
+						<span class='test-time'>fev. 21, 2024 10:09:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:01 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+941ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>DataDriven</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:07</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>cadastrarPetComSucesso1</span>
+						<span class='test-time'>fev. 21, 2024 10:09:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:07 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+39ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>DataDriven</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:08</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>cadastrarPetComSucesso1</span>
+						<span class='test-time'>fev. 21, 2024 10:09:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:08 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+68ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>DataDriven</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:09</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>pesquisaPet</span>
+						<span class='test-time'>fev. 21, 2024 10:09:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:09 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+894ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>serializacaoAtravesDeString</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>serialziacaoComObjetoJsonSimple</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+30ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>testeComAutenticacao</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+31ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>testeComBodyParameterEmObjetoJava</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+12ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>testeComCookie</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+21ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>testeComFormParameter</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+55ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>testeComHeaders</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+41ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>testeComPathParameter</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+9ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>testeComQueryParameter</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+39ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>PetStoreRestAssured</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:10</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>adicionaNovoPet</span>
+						<span class='test-time'>fev. 21, 2024 10:09:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:10 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+956ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCadastroPet</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:11</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>atualizaPetExistente</span>
+						<span class='test-time'>fev. 21, 2024 10:09:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:11 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+934ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCadastroPet</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:12</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>atualizaPetIdInexistente</span>
+						<span class='test-time'>fev. 21, 2024 10:09:12 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:12 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+844ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCadastroPet</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>22:09:13</td>
+				<td class='step-details'>
+						Test Result: fail<pre>Message: java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+</pre><pre>Stack Trace: <br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)<br>org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)<br>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)<br>org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br>io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)<br>io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)<br>io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)<br>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)<br>org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)<br>Testes.TestesCadastroPet.atualizaPetIdInexistente(TestesCadastroPet.java:117)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br>org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br>org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br>org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br>org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br>org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br>java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>org.testng.TestRunner.privateRun(TestRunner.java:766)<br>org.testng.TestRunner.run(TestRunner.java:587)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br>org.testng.SuiteRunner.run(SuiteRunner.java:286)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br>org.testng.TestNG.runSuites(TestNG.java:1039)<br>org.testng.TestNG.run(TestNG.java:1007)<br>com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br>com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)</pre>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>metodoInvalido</span>
+						<span class='test-time'>fev. 21, 2024 10:09:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:13 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+832ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCadastroPet</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:13</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>pesquisaPestFindByStatus</span>
+						<span class='test-time'>fev. 21, 2024 10:09:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:13 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+834ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCadastroPet</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:14</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>pesquisaPetInexistente</span>
+						<span class='test-time'>fev. 21, 2024 10:09:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:14 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+842ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCadastroPet</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:15</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>adicionarNovoPetComSucesso</span>
+						<span class='test-time'>fev. 21, 2024 10:09:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:15 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+15ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:16</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>verificaSeArrayDeTagsTemMaisDeZeroItens</span>
+						<span class='test-time'>fev. 21, 2024 10:09:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:16 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+854ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:17</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>verificaSeArrayPhotoUrlNaoEVazio</span>
+						<span class='test-time'>fev. 21, 2024 10:09:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:17 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+821ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:18</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>verificaSeArrayPhotoUrlTemMenosDeTresItens</span>
+						<span class='test-time'>fev. 21, 2024 10:09:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:18 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+816ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:19</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>verificaSeContemArrayDeTagsContemObjetoCujoValorParaNameEIgualAmarelo</span>
+						<span class='test-time'>fev. 21, 2024 10:09:19 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:19 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+600ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>22:09:19</td>
+				<td class='step-details'>
+						Test Result: fail<pre>Message: java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <301>.
+</pre><pre>Stack Trace: <br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)<br>org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)<br>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br>jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br>io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)<br>io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)<br>io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)<br>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)<br>org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)<br>Testes.TestesCompletos.verificaSeContemArrayDeTagsContemObjetoCujoValorParaNameEIgualAmarelo(TestesCompletos.java:94)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br>org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br>org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br>org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br>org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br>org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br>java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>org.testng.TestRunner.privateRun(TestRunner.java:766)<br>org.testng.TestRunner.run(TestRunner.java:587)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br>org.testng.SuiteRunner.run(SuiteRunner.java:286)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br>org.testng.TestNG.runSuites(TestNG.java:1039)<br>org.testng.TestNG.run(TestNG.java:1007)<br>com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br>com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)</pre>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>verificaSeContemArrayDeTagsTemTamanhoIgualA2</span>
+						<span class='test-time'>fev. 21, 2024 10:09:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:19 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+832ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:20</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>verificaSeContemChaveStatus</span>
+						<span class='test-time'>fev. 21, 2024 10:09:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:20 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+813ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:21</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>verificaSeIdNaoEVazio</span>
+						<span class='test-time'>fev. 21, 2024 10:09:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:21 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+831ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesCompletos</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:22</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>cadastroUsuariosDataDriving</span>
+						<span class='test-time'>fev. 21, 2024 10:09:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:22 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+340ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesDataProvider</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>22:09:22</td>
+				<td class='step-details'>
+						Test Result: fail<pre>Message: java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <301>.
+</pre><pre>Stack Trace: <br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)<br>org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)<br>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br>jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br>io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)<br>io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)<br>io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)<br>jdk.internal.reflect.GeneratedMethodAccessor170.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)<br>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)<br>org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)<br>Testes.TestesDataProvider.cadastroUsuariosDataDriving(TestesDataProvider.java:41)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br>org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br>org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br>org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br>org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br>org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br>java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>org.testng.TestRunner.privateRun(TestRunner.java:766)<br>org.testng.TestRunner.run(TestRunner.java:587)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br>org.testng.SuiteRunner.run(SuiteRunner.java:286)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br>org.testng.TestNG.runSuites(TestNG.java:1039)<br>org.testng.TestNG.run(TestNG.java:1007)<br>com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br>com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)</pre>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>cadastroUsuariosDataDriving</span>
+						<span class='test-time'>fev. 21, 2024 10:09:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:22 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+337ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesDataProvider</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>22:09:22</td>
+				<td class='step-details'>
+						Test Result: fail<pre>Message: java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <301>.
+</pre><pre>Stack Trace: <br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)<br>org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)<br>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br>jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br>io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)<br>io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)<br>io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)<br>jdk.internal.reflect.GeneratedMethodAccessor170.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)<br>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)<br>org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)<br>Testes.TestesDataProvider.cadastroUsuariosDataDriving(TestesDataProvider.java:41)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br>org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br>org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br>org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br>org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br>org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br>java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>org.testng.TestRunner.privateRun(TestRunner.java:766)<br>org.testng.TestRunner.run(TestRunner.java:587)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br>org.testng.SuiteRunner.run(SuiteRunner.java:286)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br>org.testng.TestNG.runSuites(TestNG.java:1039)<br>org.testng.TestNG.run(TestNG.java:1007)<br>com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br>com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)</pre>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>cadastroUsuariosDataDriving</span>
+						<span class='test-time'>fev. 21, 2024 10:09:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:22 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+332ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesDataProvider</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>22:09:23</td>
+				<td class='step-details'>
+						Test Result: fail<pre>Message: java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <301>.
+</pre><pre>Stack Trace: <br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)<br>org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)<br>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br>jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br>io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)<br>io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)<br>io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)<br>jdk.internal.reflect.GeneratedMethodAccessor170.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)<br>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)<br>org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)<br>Testes.TestesDataProvider.cadastroUsuariosDataDriving(TestesDataProvider.java:41)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br>org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br>org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br>org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br>org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br>org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br>java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>org.testng.TestRunner.privateRun(TestRunner.java:766)<br>org.testng.TestRunner.run(TestRunner.java:587)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br>org.testng.SuiteRunner.run(SuiteRunner.java:286)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br>org.testng.TestNG.runSuites(TestNG.java:1039)<br>org.testng.TestNG.run(TestNG.java:1007)<br>com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br>com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)</pre>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>atualizarDadosDeUmPetExistente</span>
+						<span class='test-time'>fev. 21, 2024 10:09:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:23 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+9ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesGabarito</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:24</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>atualizarDadosDeUmPetInformandoIdFormatoInvalido</span>
+						<span class='test-time'>fev. 21, 2024 10:09:24 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:24 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+805ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesGabarito</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>22:09:25</td>
+				<td class='step-details'>
+						Test Result: fail<pre>Message: java.lang.AssertionError: 1 expectation failed.
+Expected status code (<400> or <406> or <403>) but was <500>.
+</pre><pre>Stack Trace: <br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)<br>org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)<br>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)<br>io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)<br>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br>jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)<br>org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)<br>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)<br>io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br>io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)<br>io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)<br>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)<br>org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)<br>io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)<br>Testes.TestesGabarito.atualizarDadosDeUmPetInformandoIdFormatoInvalido(TestesGabarito.java:162)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br>org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br>org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br>org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br>org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br>org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br>java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br>org.testng.TestRunner.privateRun(TestRunner.java:766)<br>org.testng.TestRunner.run(TestRunner.java:587)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br>org.testng.SuiteRunner.run(SuiteRunner.java:286)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br>org.testng.TestNG.runSuites(TestNG.java:1039)<br>org.testng.TestNG.run(TestNG.java:1007)<br>com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br>com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)</pre>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>cadastrarNovoPedidoDePetComSucesso</span>
+						<span class='test-time'>fev. 21, 2024 10:09:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:25 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+902ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesGabarito</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>22:09:25</td>
+				<td class='step-details'>
+						agora vou executar o teste para o pet de id: 99998
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:26</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>pesquisarPorPetInexistente</span>
+						<span class='test-time'>fev. 21, 2024 10:09:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:26 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+820ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesGabarito</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:26</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>pesquisarPorPetsComStatusPending</span>
+						<span class='test-time'>fev. 21, 2024 10:09:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:26 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+171ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesGabarito</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:28</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>realizarRequisicaoPetInformandoMetodoInvalido</span>
+						<span class='test-time'>fev. 21, 2024 10:09:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>fev. 21, 2024 10:09:28 PM</span>
+	<span class='label end-time'>fev. 21, 2024 10:09:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+778ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>TestesGabarito</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>22:09:28</td>
+				<td class='step-details'>
+						Test Result: pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>DataDriven</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>fev. 21, 2024 10:09:01 PM</td>
+										<td class='linked' test-id='1'>cadastrarPetComSucesso1</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:07 PM</td>
+										<td class='linked' test-id='2'>cadastrarPetComSucesso1</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:08 PM</td>
+										<td class='linked' test-id='3'>cadastrarPetComSucesso1</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>PetStoreRestAssured</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>fev. 21, 2024 10:09:09 PM</td>
+										<td class='linked' test-id='4'>pesquisaPet</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='5'>serializacaoAtravesDeString</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='6'>serialziacaoComObjetoJsonSimple</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='7'>testeComAutenticacao</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='8'>testeComBodyParameterEmObjetoJava</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='9'>testeComCookie</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='10'>testeComFormParameter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='11'>testeComHeaders</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='12'>testeComPathParameter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='13'>testeComQueryParameter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestesCadastroPet</span>
+						<span class='category-status right'>
+						<span class='label pass'>5</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 5</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>fev. 21, 2024 10:09:10 PM</td>
+										<td class='linked' test-id='14'>adicionaNovoPet</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:11 PM</td>
+										<td class='linked' test-id='15'>atualizaPetExistente</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:12 PM</td>
+										<td class='linked' test-id='16'>atualizaPetIdInexistente</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:13 PM</td>
+										<td class='linked' test-id='17'>metodoInvalido</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:13 PM</td>
+										<td class='linked' test-id='18'>pesquisaPestFindByStatus</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:14 PM</td>
+										<td class='linked' test-id='19'>pesquisaPetInexistente</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestesCompletos</span>
+						<span class='category-status right'>
+						<span class='label pass'>7</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>fev. 21, 2024 10:09:15 PM</td>
+										<td class='linked' test-id='20'>adicionarNovoPetComSucesso</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:16 PM</td>
+										<td class='linked' test-id='21'>verificaSeArrayDeTagsTemMaisDeZeroItens</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:17 PM</td>
+										<td class='linked' test-id='22'>verificaSeArrayPhotoUrlNaoEVazio</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:18 PM</td>
+										<td class='linked' test-id='23'>verificaSeArrayPhotoUrlTemMenosDeTresItens</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:19 PM</td>
+										<td class='linked' test-id='24'>verificaSeContemArrayDeTagsContemObjetoCujoValorParaNameEIgualAmarelo</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:19 PM</td>
+										<td class='linked' test-id='25'>verificaSeContemArrayDeTagsTemTamanhoIgualA2</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:20 PM</td>
+										<td class='linked' test-id='26'>verificaSeContemChaveStatus</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:21 PM</td>
+										<td class='linked' test-id='27'>verificaSeIdNaoEVazio</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestesDataProvider</span>
+						<span class='category-status right'>
+						<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>fev. 21, 2024 10:09:22 PM</td>
+										<td class='linked' test-id='28'>cadastroUsuariosDataDriving</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:22 PM</td>
+										<td class='linked' test-id='29'>cadastroUsuariosDataDriving</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:22 PM</td>
+										<td class='linked' test-id='30'>cadastroUsuariosDataDriving</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestesGabarito</span>
+						<span class='category-status right'>
+						<span class='label pass'>5</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 5</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>fev. 21, 2024 10:09:23 PM</td>
+										<td class='linked' test-id='31'>atualizarDadosDeUmPetExistente</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:24 PM</td>
+										<td class='linked' test-id='32'>atualizarDadosDeUmPetInformandoIdFormatoInvalido</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:25 PM</td>
+										<td class='linked' test-id='33'>cadastrarNovoPedidoDePetComSucesso</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:26 PM</td>
+										<td class='linked' test-id='34'>pesquisarPorPetInexistente</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:26 PM</td>
+										<td class='linked' test-id='35'>pesquisarPorPetsComStatusPending</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>fev. 21, 2024 10:09:28 PM</td>
+										<td class='linked' test-id='36'>realizarRequisicaoPetInformandoMetodoInvalido</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>36</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>fev. 21, 2024 10:09:00 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>fev. 21, 2024 10:09:28 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 27s+834ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>DataDriven</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>PetStoreRestAssured</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>TestesCadastroPet</td>
+							<td>5</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									83,333%
+							</td>
+						</tr>
+						<tr>
+							<td>TestesCompletos</td>
+							<td>7</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									87,5%
+							</td>
+						</tr>
+						<tr>
+							<td>TestesDataProvider</td>
+							<td>0</td>
+							<td>3</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>TestesGabarito</td>
+							<td>5</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									83,333%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 36,
+				passParent: 30,
+				failParent: 6,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 6,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "cadastrarPetComSucesso1":5.941,"cadastrarPetComSucesso1":1.039,"cadastrarPetComSucesso1":1.068,"pesquisaPet":0.894,"serializacaoAtravesDeString":0.004,"serialziacaoComObjetoJsonSimple":0.03,"testeComAutenticacao":0.031,"testeComBodyParameterEmObjetoJava":0.012,"testeComCookie":0.021,"testeComFormParameter":0.055,"testeComHeaders":0.041,"testeComPathParameter":0.009,"testeComQueryParameter":0.039,"adicionaNovoPet":0.956,"atualizaPetExistente":0.934,"atualizaPetIdInexistente":0.844,"metodoInvalido":0.832,"pesquisaPestFindByStatus":0.834,"pesquisaPetInexistente":0.842,"adicionarNovoPetComSucesso":1.015,"verificaSeArrayDeTagsTemMaisDeZeroItens":0.854,"verificaSeArrayPhotoUrlNaoEVazio":0.821,"verificaSeArrayPhotoUrlTemMenosDeTresItens":0.816,"verificaSeContemArrayDeTagsContemObjetoCujoValorParaNameEIgualAmarelo":0.6,"verificaSeContemArrayDeTagsTemTamanhoIgualA2":0.832,"verificaSeContemChaveStatus":0.813,"verificaSeIdNaoEVazio":0.831,"cadastroUsuariosDataDriving":0.34,"cadastroUsuariosDataDriving":0.337,"cadastroUsuariosDataDriving":0.332,"atualizarDadosDeUmPetExistente":1.009,"atualizarDadosDeUmPetInformandoIdFormatoInvalido":0.805,"cadastrarNovoPedidoDePetComSucesso":0.902,"pesquisarPorPetInexistente":0.82,"pesquisarPorPetsComStatusPending":1.171,"realizarRequisicaoPetInformandoMetodoInvalido":0.778
+			};
+		</script>
+	
+		  <script src='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>

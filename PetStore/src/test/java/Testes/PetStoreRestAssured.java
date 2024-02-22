@@ -1,6 +1,8 @@
 package Testes;
 
 import static io.restassured.RestAssured.given;
+
+import bases.TestBase;
 import org.testng.annotations.Test;
 import JsonObjects.Category;
 import JsonObjects.Pet;
@@ -17,7 +19,7 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 
 
-public class PetStoreRestAssured {
+public class PetStoreRestAssured extends TestBase {
 
     @Test
     public void pesquisaPet() {

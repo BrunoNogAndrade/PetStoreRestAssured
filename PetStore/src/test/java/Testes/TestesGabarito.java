@@ -1,21 +1,22 @@
 package Testes;
 
-import Relatorio.Relatorio;
 import Utils.Utils;
 import JsonObjects.Order;
 import JsonObjects.Category;
 import JsonObjects.Pet;
 import JsonObjects.Tag;
+import bases.TestBase;
 import com.aventstack.extentreports.Status;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.annotations.*;
 
 import static Utils.Constants.UrlBase;
+import static Utils.ExtentReportsUtils.TEST;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class TestesGabarito extends Relatorio {
+public class TestesGabarito extends TestBase {
 
     public TestesGabarito(){
         enableLoggingOfRequestAndResponseIfValidationFails();

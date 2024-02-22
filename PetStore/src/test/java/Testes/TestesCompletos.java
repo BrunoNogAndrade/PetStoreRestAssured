@@ -2,13 +2,14 @@ package Testes;
 
 import static Utils.Constants.UrlBase;
 import Relatorio.Relatorio;
+import bases.TestBase;
 import org.testng.annotations.Test;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class TestesCompletos extends Relatorio {
+public class TestesCompletos extends TestBase {
     JSONObject pet = new JSONObject();
     JSONObject category = new JSONObject();
     JSONObject tag1 = new JSONObject();

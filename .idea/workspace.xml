@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89cba049-4e59-4a06-83af-ba2d8bfd8dc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetStore/globalParameters.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/PetStoreRestAssured.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/PetStoreRestAssured.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Testes/DataDriven.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/DataDriven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Testes/PetStoreRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/PetStoreRestAssured.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesCadastroPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesCadastroPet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Utils/GeneralUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/GeneralUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/bases/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/bases/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Relatorio/Relatorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Relatorio/Relatorio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesCompletos.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesCompletos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesGabarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Testes/TestesGabarito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/src/test/java/Utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/DataDriven.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/DataDriven.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/PetStoreRestAssured.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/PetStoreRestAssured.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesCadastroPet.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesCadastroPet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesCompletos.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesCompletos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesDataProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesDataProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesGabarito.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Testes/TestesGabarito.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetStore/target/test-classes/Utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/PetStore/target/test-classes/Utils/Constants.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
     <property name="project.structure.side.proportion" value="0.26436782" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager" selected="TestNG.TestesCadastroPet.adicionaNovoPet">
+  <component name="RunManager" selected="TestNG.Testes">
     <configuration name="PetStoreRestAssured.pesquisaPet" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PetStoreRestAssured" />
       <extension name="coverage">
@@ -70,6 +73,22 @@
       <option name="MAIN_CLASS_NAME" value="Testes.PetStoreRestAssured" />
       <option name="METHOD_NAME" value="pesquisaPet" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testes" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testes" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -96,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Testes" />
         <item itemvalue="TestNG.TestesCadastroPet.adicionaNovoPet" />
         <item itemvalue="TestNG.PetStoreRestAssured.pesquisaPet" />
       </list>
@@ -122,22 +142,22 @@
       <screen x="0" y="0" width="1366" height="687" />
     </state>
     <state x="484" y="85" key="FileChooserDialogImpl/0.0.1366.687@0.0.1366.687" timestamp="1708533694082" />
-    <state width="1323" height="165" key="GridCell.Tab.0.bottom" timestamp="1708554824967">
+    <state width="1323" height="195" key="GridCell.Tab.0.bottom" timestamp="1708564135484">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state width="1323" height="165" key="GridCell.Tab.0.bottom/0.0.1366.687@0.0.1366.687" timestamp="1708554824967" />
-    <state width="1323" height="165" key="GridCell.Tab.0.center" timestamp="1708554824967">
+    <state width="1323" height="195" key="GridCell.Tab.0.bottom/0.0.1366.687@0.0.1366.687" timestamp="1708564135484" />
+    <state width="1323" height="195" key="GridCell.Tab.0.center" timestamp="1708564135484">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state width="1323" height="165" key="GridCell.Tab.0.center/0.0.1366.687@0.0.1366.687" timestamp="1708554824967" />
-    <state width="1323" height="165" key="GridCell.Tab.0.left" timestamp="1708554824967">
+    <state width="1323" height="195" key="GridCell.Tab.0.center/0.0.1366.687@0.0.1366.687" timestamp="1708564135484" />
+    <state width="1323" height="195" key="GridCell.Tab.0.left" timestamp="1708564135484">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state width="1323" height="165" key="GridCell.Tab.0.left/0.0.1366.687@0.0.1366.687" timestamp="1708554824967" />
-    <state width="1323" height="165" key="GridCell.Tab.0.right" timestamp="1708554824967">
+    <state width="1323" height="195" key="GridCell.Tab.0.left/0.0.1366.687@0.0.1366.687" timestamp="1708564135484" />
+    <state width="1323" height="195" key="GridCell.Tab.0.right" timestamp="1708564135484">
       <screen x="0" y="0" width="1366" height="687" />
     </state>
-    <state width="1323" height="165" key="GridCell.Tab.0.right/0.0.1366.687@0.0.1366.687" timestamp="1708554824967" />
+    <state width="1323" height="195" key="GridCell.Tab.0.right/0.0.1366.687@0.0.1366.687" timestamp="1708564135484" />
     <state x="213" y="0" key="Maven.ArtifactSearchDialog" timestamp="1708531944976">
       <screen x="0" y="0" width="1366" height="687" />
     </state>

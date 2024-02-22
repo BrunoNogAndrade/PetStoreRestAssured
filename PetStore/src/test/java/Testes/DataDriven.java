@@ -5,6 +5,7 @@ import JsonObjects.Category;
 import JsonObjects.Pet;
 import JsonObjects.Tag;
 import Utils.Utils;
+import bases.TestBase;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ import static Utils.Constants.UrlBase;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class DataDriven extends Relatorio {
+public class DataDriven extends TestBase {
     public DataDriven() {
         enableLoggingOfRequestAndResponseIfValidationFails();
     }
